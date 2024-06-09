@@ -27,8 +27,10 @@ export default function MuscleModels() {
 		<>
 			{" "}
 			<Alert className="w-[80vw] ml-[10vw] bg-neutral-800 text-white border-neutral-700">
-				<AlertTitle>Attention!</AlertTitle>
-				<AlertDescription>To learn more click on the muscle </AlertDescription>
+				<AlertTitle>Guess What!</AlertTitle>
+				<AlertDescription>
+					You can learn more by clicking on a muscle!{" "}
+				</AlertDescription>
 			</Alert>
 			<div className="flex justify-center items-center min-h-screen">
 				<div className="flex flex-row items-center">
