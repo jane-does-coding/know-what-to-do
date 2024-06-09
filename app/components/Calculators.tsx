@@ -95,7 +95,6 @@ export function Calculators() {
 					</TabsTrigger>
 				</TabsList>
 
-				{/* BMI Calculator */}
 				<TabsContent value="bmi">
 					<Card className="bg-neutral-800 text-white">
 						<CardHeader>
@@ -196,7 +195,6 @@ export function Calculators() {
 					</Card>
 				</TabsContent>
 
-				{/* BMR Calculator */}
 				<TabsContent value="bmr">
 					<Card className="bg-neutral-800 text-white">
 						<CardHeader>
@@ -297,7 +295,6 @@ export function Calculators() {
 					</Card>
 				</TabsContent>
 
-				{/* Body Fat Calculator */}
 				<TabsContent value="bodyFat">
 					<Card className="bg-neutral-800 text-white">
 						<CardHeader>
@@ -362,7 +359,6 @@ export function Calculators() {
 					</Card>
 				</TabsContent>
 
-				{/* Lean Body Mass Calculator */}
 				<TabsContent value="leanBodyMass">
 					<Card className="bg-neutral-800 text-white">
 						<CardHeader>
