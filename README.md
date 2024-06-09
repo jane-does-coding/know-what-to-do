@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Know What To Do
 
-## Getting Started
+images
 
-First, run the development server:
+Obesety is a growing problem now, and many people hesitate to start working out because they dont know what muscles to workout and what exersices do. So this website helps to find you what to do and keep you aware with knowlege like BMI, BMR, Body fat and Lean body Mass, which you can calculate on that site.
+
+## Technologies used
+
+[![Technologies](https://skillicons.dev/icons?i=ts,tailwind,nextjs,react,github)](https://skillicons.dev)
+
+## Demo
+
+[KnowWhatToDo - Live Demo](https://know-what-to-do.vercel.app/)
+
+## Functionality
+
+- View Muscle Names
+- View Muscles Positions & Body Models
+- View list of Exercises for each muscle
+- Calculate BMI
+- Calculate BMR
+- Calculate Body Fat
+- Calculate Lean Body Mass
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/jane-does-coding/know-what-to-do
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd my-project
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm i
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  npm run dev
+```

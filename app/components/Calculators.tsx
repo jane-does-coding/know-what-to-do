@@ -322,18 +322,22 @@ export function Calculators() {
 									className="text-white"
 								/>
 							</div>
-							<Label htmlFor="bf-gender">Gender</Label>
-							<select
-								id="bf-gender"
-								className="flex h-10 w-full rounded-md border border-neutral-900 bg-neutral-900/50 px-3 py-2 text-sm ring-offset-neutral-500 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:bg-neutral-950 dark:ring-offset-neutral-950 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300  text-neutral-100"
-								value={gender}
-								onChange={(e) => setGender(e.target.value as Gender)}
-							>
-								<option value="male">Male</option>
-								<option value="female">Female</option>
-							</select>
+							<div>
+								<Label htmlFor="bf-gender" className="m-0 p-0">
+									Gender
+								</Label>
+								<select
+									id="bf-gender"
+									className="flex h-10 w-full rounded-md border border-neutral-900 bg-neutral-900/50 px-3 py-2 text-sm ring-offset-neutral-500 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:bg-neutral-950 dark:ring-offset-neutral-950 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300  text-neutral-100"
+									value={gender}
+									onChange={(e) => setGender(e.target.value as Gender)}
+								>
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+								</select>
+							</div>
 						</CardContent>
-						<CardFooter>
+						<CardFooter className="flex items-center justify-start">
 							<Button
 								onClick={() => {
 									const bmi = parseFloat(
@@ -352,9 +356,11 @@ export function Calculators() {
 							>
 								Calculate Body Fat
 							</Button>
-							{bodyFatResult && (
-								<p className="mt-4">Your Body Fat: {bodyFatResult}%</p>
-							)}
+							<p className="ml-4">
+								{bodyFatResult && (
+									<span className="mt-4">Your Body Fat: {bodyFatResult}%</span>
+								)}
+							</p>
 						</CardFooter>
 					</Card>
 				</TabsContent>
@@ -385,7 +391,7 @@ export function Calculators() {
 								/>
 							</div>
 						</CardContent>
-						<CardFooter>
+						<CardFooter className="flex items-center justify-start">
 							<Button
 								onClick={() => {
 									const weight =
@@ -407,11 +413,13 @@ export function Calculators() {
 							>
 								Calculate Lean Body Mass
 							</Button>
-							{leanBodyMassResult && (
-								<p className="mt-4">
-									Your Lean Body Mass: {leanBodyMassResult} kg
-								</p>
-							)}
+							<p className="ml-4">
+								{leanBodyMassResult && (
+									<span className="mt-4">
+										Your Lean Body Mass: {leanBodyMassResult} kg
+									</span>
+								)}
+							</p>
 						</CardFooter>
 					</Card>
 				</TabsContent>
